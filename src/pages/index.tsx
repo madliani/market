@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { HeadFC, Link, PageProps, graphql } from "gatsby";
 import React from "react";
 import { Card, Col, ColProps, Container, Row } from "react-bootstrap";
+import { SEO } from "../components/seo";
 import { ProductsResponse } from "../types/products";
 
 export const indexPageQuery = graphql`
@@ -17,7 +18,7 @@ export const indexPageQuery = graphql`
   }
 `;
 
-export const Head: HeadFC = () => <title>Home Page</title>;
+export const Head: HeadFC = () => <SEO />;
 
 const breakpoints: ColProps = {
   xs: 12,

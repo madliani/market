@@ -8,11 +8,16 @@ import {
   Container,
   Row,
 } from "react-bootstrap";
+import { SEO } from "../components/seo";
 import { Product, ProductsResponse } from "../types/products";
 
 type PageContext = {
   product: Product;
 };
+
+export const Head: React.FC<PageProps<ProductsResponse, PageContext>> = ({
+  pageContext,
+}) => <SEO title={`Market :: ${pageContext.product.name}`} />;
 
 const breakpoints: ColProps = {
   xs: 12,
