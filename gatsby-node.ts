@@ -3,7 +3,7 @@ import path from "path";
 export const createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
   const queryResults = await graphql(`
-    query IndexPageQuery {
+    query ProductsPagesQuery {
       allProductsJson {
         nodes {
           department
