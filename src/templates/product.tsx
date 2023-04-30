@@ -1,4 +1,4 @@
-import { Link, PageProps } from "gatsby";
+import { HeadFC, Link, PageProps } from "gatsby";
 import React from "react";
 import {
   Breadcrumb,
@@ -15,7 +15,7 @@ type PageContext = {
   product: Product;
 };
 
-export const Head: React.FC<PageProps<ProductsResponse, PageContext>> = ({
+export const Head: HeadFC<ProductsResponse, PageContext> = ({
   pageContext,
 }) => <SEO title={`Market :: ${pageContext.product.name}`} />;
 
