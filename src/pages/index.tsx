@@ -1,18 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { HeadFC, PageProps, graphql } from "gatsby";
+import { HeadFC, Link, PageProps, graphql } from "gatsby";
 import React from "react";
 import { Card, Col, ColProps, Container, Row } from "react-bootstrap";
-
-type Product = {
-  department: string;
-  description: string;
-  id: string;
-  image: string;
-  name: string;
-  price: string;
-};
-
-type ProductsResponse = { allProductsJson: { nodes: Product[] } };
+import { ProductsResponse } from "../types/products";
 
 export const indexPageQuery = graphql`
   query IndexPageQuery {
@@ -45,13 +35,15 @@ const IndexPage: React.FC<PageProps<ProductsResponse>> = ({ data }) => {
       <Row className="mb-3">
         {products.map(({ id, image, name, price }) => (
           <Col key={id} className="mt-3" {...breakpoints}>
-            <Card>
-              <Card.Img variant="top" src={image} alt="Image not found!" />
-              <Card.Body>
-                <Card.Title>{name}</Card.Title>
-                <Card.Subtitle>{price}$</Card.Subtitle>
-              </Card.Body>
-            </Card>
+            <Link to={`/products/${id}`}>
+              <Card>
+                <Card.Img variant="top" src={image} alt="Image not found!" />
+                <Card.Body>
+                  <Card.Title>{name}</Card.Title>
+                  <Card.Subtitle>{price}$</Card.Subtitle>
+                </Card.Body>
+              </Card>
+            </Link>
           </Col>
         ))}
       </Row>
