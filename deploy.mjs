@@ -2,7 +2,7 @@ import { publish } from "gh-pages";
 
 try {
     publish(
-        "./dist",
+        "./public",
         {
             branch: "main",
             dest: "market",
