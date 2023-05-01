@@ -7,4 +7,6 @@ export type Product = {
     price: string;
 };
 
-export type ProductsResponse = { allProductsJson: { nodes: Product[] } };
+export type ProductsResponse<T = Product> = {
+    allProductsJson: { nodes: T[] };
+};

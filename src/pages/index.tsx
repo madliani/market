@@ -5,6 +5,13 @@ import { Card, Col, ColProps, Container, Row } from "react-bootstrap";
 import { SEO } from "../components/seo";
 import { ProductsResponse } from "../types/products";
 
+type Product = {
+    id: string;
+    image: string;
+    name: string;
+    price: string;
+};
+
 export const indexPageQuery = graphql`
     query IndexPageQuery {
         allProductsJson {
@@ -28,7 +35,9 @@ const breakpoints: ColProps = {
     xs: 12
 };
 
-const IndexPage: React.FC<PageProps<ProductsResponse>> = ({ data }) => {
+const IndexPage: React.FC<PageProps<ProductsResponse<Product>>> = ({
+    data
+}) => {
     const products = data.allProductsJson.nodes;
 
     return (
