@@ -2,43 +2,43 @@ import React from "react";
 import { useSiteMetadata } from "../hooks/useSiteMetadata";
 
 type Properties = {
-  title?: string;
-  description?: string;
-  pathname?: string;
-  children?: React.ReactNode;
+    children?: React.ReactNode;
+    description?: string;
+    pathname?: string;
+    title?: string;
 };
 
 export const SEO: React.FC<Properties> = ({
-  title,
-  description,
-  pathname,
-  children,
+    children,
+    description,
+    pathname,
+    title
 }) => {
-  const {
-    title: defaultTitle,
-    description: defaultDescription,
-    image,
-    siteUrl,
-  } = useSiteMetadata();
+    const {
+        description: defaultDescription,
+        image,
+        siteUrl,
+        title: defaultTitle
+    } = useSiteMetadata();
 
-  const seo = {
-    title: title || defaultTitle,
-    description: description || defaultDescription,
-    image: `${siteUrl}${image}`,
-    url: `${siteUrl}${pathname || ""}`,
-  };
+    const seo = {
+        description: description || defaultDescription,
+        image: `${siteUrl}${image}`,
+        title: title || defaultTitle,
+        url: `${siteUrl}${pathname || ""}`
+    };
 
-  return (
-    <>
-      <title>{seo.title}</title>
-      <meta name="description" content={seo.description} />
-      <meta name="image" content={seo.image} />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:description" content={seo.description} />
-      <meta name="twitter:image" content={seo.image} />
-      <meta name="twitter:title" content={seo.title} />
-      <meta name="twitter:url" content={seo.url} />
-      {children}
-    </>
-  );
+    return (
+        <>
+            <title>{seo.title}</title>
+            <meta content={seo.description} name="description" />
+            <meta content={seo.image} name="image" />
+            <meta content="summary_large_image" name="twitter:card" />
+            <meta content={seo.description} name="twitter:description" />
+            <meta content={seo.image} name="twitter:image" />
+            <meta content={seo.title} name="twitter:title" />
+            <meta content={seo.url} name="twitter:url" />
+            {children}
+        </>
+    );
 };

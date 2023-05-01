@@ -1,49 +1,39 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal TypeScript Starter
-</h1>
+# Market
 
-## 🚀 Quick start
+<div align="center">
+    <img src="src/images/icon.png" alt="Market logo" width="180" height="180" />
 
-1.  **Create a Gatsby site.**
+    Web Market
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+</div>
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
-    ```
+![Built with Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Built with Gatsby](https://img.shields.io/badge/Gatsby-663399?style=for-the-badge&logo=gatsby&logoColor=white)
+![Built with React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Built with TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 
-2.  **Start developing.**
+## Usage
 
-    Navigate into your new site’s directory and start it up.
+In the project directory, you can run:
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+### `npm start`
 
-3.  **Open the code and start customizing!**
+Runs the app in the development mode.\
+Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 
-    Your site is now running at http://localhost:8000!
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+### `npm build`
 
-4.  **Learn more**
+Builds the app for production to the `dist` folder.\
+It correctly bundles React in production mode and optimizes the build for the best
+performance.
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## 🚀 Quick start (Netlify)
+## Contributors
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+-   [Rakhman Abdurakhmanov](https://crystallographer.github.io) - creator and
+    maintainer
