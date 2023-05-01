@@ -31,12 +31,16 @@ export const SEO: React.FC<Properties> = ({
     return (
         <>
             <title>{seo.title}</title>
-            <meta content={seo.description} name="description" />
-            <meta content={seo.image} name="image" />
             <meta content="summary_large_image" name="twitter:card" />
+            <meta content={seo.description} name="description" />
+            <meta content={seo.description} name="og:description" />
             <meta content={seo.description} name="twitter:description" />
+            <meta content={seo.image} name="image" />
+            <meta content={seo.image} name="og:image" />
             <meta content={seo.image} name="twitter:image" />
+            <meta content={seo.title} name="og:title" />
             <meta content={seo.title} name="twitter:title" />
+            <meta content={seo.url} name="og:site_name" />
             <meta content={seo.url} name="twitter:url" />
             {children}
         </>
