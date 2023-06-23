@@ -93,5 +93,6 @@
         "serve": "gatsby serve",
         "start": "gatsby develop"
     },
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "packageManager": "yarn@3.6.0"
 }
