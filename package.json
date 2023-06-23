@@ -91,7 +91,6 @@
         "pre-commit": "lint-staged",
         "prepare": "husky install",
         "serve": "gatsby serve",
-        "server": "json-graphql-server server/db.js",
         "start": "gatsby develop"
     },
     "version": "1.0.0"

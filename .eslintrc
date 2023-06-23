@@ -22,7 +22,7 @@
         "plugin:sonarjs/recommended",
         "plugin:sort/recommended"
     ],
-    "ignorePatterns": ["gatsby-config.ts", "gatsby-node.ts"],
+    "ignorePatterns": ["gatsby-config.ts", "gatsby-node.ts", "gatsby-ssr.ts"],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "allowReserved": false,

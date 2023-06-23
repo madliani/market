@@ -1,8 +1,26 @@
-import path from "path";
+import { GatsbyNode } from "gatsby";
+import { resolve } from "path";
 
-export const createPages = async ({ graphql, actions }) => {
+type Product = {
+    department: string;
+    description: string;
+    id: string;
+    image: string;
+    name: string;
+    price: string;
+};
+
+type ProductsResponse = {
+    allProductsJson: { nodes: Product[] };
+};
+
+export const createPages: GatsbyNode["createPages"] = async ({
+    actions,
+    graphql
+}) => {
     const { createPage } = actions;
-    const queryResults = await graphql(`
+    const productTemplate = resolve("src/templates/product.tsx");
+    const queryResults = await graphql<ProductsResponse>(`
         query ProductsPagesQuery {
             allProductsJson {
                 nodes {
@@ -16,15 +34,15 @@ export const createPages = async ({ graphql, actions }) => {
             }
         }
     `);
-    const productTemplate = path.resolve("src/templates/product.tsx");
 
-    queryResults.data.allProductsJson.nodes.forEach((node) => {
+    queryResults.data?.allProductsJson.nodes.forEach((node) => {
         createPage({
-            path: `/products/${node.id}`,
             component: productTemplate,
             context: {
                 product: node
-            }
+            },
+            defer: true,
+            path: `/products/${node.id}`
         });
     });
 };

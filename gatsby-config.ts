@@ -1,40 +1,45 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
-    siteMetadata: {
-        description: "Web market.",
-        siteUrl: "https://www.yourdomain.tld",
-        title: "Market"
-    },
     graphqlTypegen: true,
     plugins: [
         "gatsby-plugin-image",
         "gatsby-plugin-sitemap",
         {
-            resolve: "gatsby-plugin-manifest",
             options: {
-                icon: `${__dirname}/src/images/icon.png`
-            }
+                background_color: "#663399",
+                display: "minimal-ui",
+                icon: `${__dirname}/src/images/icon.png`,
+                name: "market",
+                short_name: "market",
+                start_url: "/"
+            },
+            resolve: "gatsby-plugin-manifest"
         },
         "gatsby-plugin-sharp",
         "gatsby-transformer-sharp",
         {
-            resolve: "gatsby-source-filesystem",
             options: {
                 name: "images",
                 path: `${__dirname}/src/images`
             },
-            __key: "images"
+            resolve: "gatsby-source-filesystem"
         },
         "gatsby-transformer-json",
         {
-            resolve: "gatsby-source-filesystem",
             options: {
                 name: "products",
                 path: `${__dirname}/src/data`
-            }
+            },
+            resolve: "gatsby-source-filesystem"
         }
-    ]
+    ],
+    siteMetadata: {
+        author: "@crystallographer",
+        description: "Web market.",
+        siteUrl: "https://crystallographer.github.io/market",
+        title: "Market"
+    }
 };
 
 export default config;
