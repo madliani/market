@@ -14,10 +14,10 @@ type ProductsResponse = {
     allProductsJson: { nodes: Product[] };
 };
 
-export const createPages: GatsbyNode["createPages"] = async ({
+export const createPages: GatsbyNode["createPages"] = async function ({
     actions,
     graphql
-}) => {
+}) {
     const { createPage } = actions;
     const productTemplate = resolve("src/templates/product.tsx");
     const queryResults = await graphql<ProductsResponse>(`
