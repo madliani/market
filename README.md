@@ -1,11 +1,11 @@
 # Market
 
-<div align="center">
+<p align="center">
     <img src="src/images/icon.png" alt="Market logo" width="180" height="180" />
 
     Web Market
 
-</div>
+</p>
 
 ![Built with Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![Built with Gatsby](https://img.shields.io/badge/Gatsby-663399?style=for-the-badge&logo=gatsby&logoColor=white)
@@ -16,7 +16,7 @@
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
@@ -24,7 +24,7 @@ Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm build`
+### `yarn build`
 
 Builds the app for production to the `public` folder.\
 It correctly bundles React in production mode and optimizes the build for the best
@@ -32,8 +32,3 @@ performance.
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
-
-## Contributors
-
--   [Rakhman Abdurakhmanov](https://crystallographer.github.io) - creator and
-    maintainer
