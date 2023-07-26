@@ -1,7 +1,6 @@
 {
     "env": {
-        "browser": true,
-        "es6": true
+        "browser": true
     },
     "extends": [
         "eslint:recommended",
@@ -22,7 +21,6 @@
         "plugin:sonarjs/recommended",
         "plugin:sort/recommended"
     ],
-    "ignorePatterns": ["gatsby-config.ts", "gatsby-node.ts", "gatsby-ssr.ts"],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "allowReserved": false,
@@ -31,7 +29,7 @@
             "impliedStrict": true,
             "jsx": true
         },
-        "ecmaVersion": 6,
+        "ecmaVersion": 2022,
         "project": ["tsconfig.json"],
         "sourceType": "module"
     },
