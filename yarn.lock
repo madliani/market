@@ -11232,6 +11232,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^17.7.2
     "@commitlint/config-conventional": ^17.7.0
+    "@gatsbyjs/reach-router": ^2.0.1
     "@types/node": ^20.8.5
     "@types/react": ^18.2.28
     "@types/react-dom": ^18.2.13
@@ -11254,23 +11255,29 @@ __metadata:
     eslint-plugin-sonarjs: ^0.21.0
     eslint-plugin-sort: ^2.10.0
     gatsby: ^5.12.6
+    gatsby-link: ^5.12.0
     gatsby-plugin-image: ^3.12.1
     gatsby-plugin-manifest: ^5.12.1
     gatsby-plugin-sharp: ^5.12.1
     gatsby-plugin-sitemap: ^6.12.1
+    gatsby-react-router-scroll: ^6.12.0
+    gatsby-script: ^2.12.0
     gatsby-source-filesystem: ^5.12.0
     gatsby-transformer-json: ^5.12.0
     gatsby-transformer-sharp: ^5.12.1
     husky: ^8.0.3
     lint-staged: ^14.0.1
     lodash: ^4.17.21
+    mitt: ^3.0.1
     pinst: ^3.0.0
     postcss: ^8.4.31
     postcss-styled-syntax: ^0.5.0
     prettier: 3.0.3
+    prop-types: ^15.8.1
     react: ^18.2.0
     react-bootstrap: ^2.9.0
     react-dom: ^18.2.0
+    shallow-compare: ^1.2.2
     stylelint: ^15.10.3
     stylelint-config-clean-order: ^5.2.0
     stylelint-config-standard: ^34.0.0
@@ -11649,6 +11656,13 @@ __metadata:
   version: 1.2.0
   resolution: "mitt@npm:1.2.0"
   checksum: 53abb94c6203250e2498e152ae096288c4866c6aab1dc093922084a7414af4aa6cda5a51d480267a8f0bd7908b0e896099bc953317aca8a18672dc67ee7e923d
+  languageName: node
+  linkType: hard
+
+"mitt@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "mitt@npm:3.0.1"
+  checksum: b55a489ac9c2949ab166b7f060601d3b6d893a852515ae9eca4e11df01c013876df777ea109317622b5c1c60e8aae252558e33c8c94e14124db38f64a39614b1
   languageName: node
   linkType: hard
 
