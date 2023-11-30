@@ -110,8 +110,7 @@
         "pre-commit": "lint-staged",
         "prepack": "pinst --disable",
         "prepare": "husky install",
-        "serve": "gatsby serve",
-        "start": "gatsby develop"
+        "serve": "gatsby serve"
     },
     "version": "1.0.0"
 }
