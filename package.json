@@ -77,7 +77,6 @@
         "bootstrap",
         "gatsby",
         "graphql",
-        "pnpm",
         "react",
         "styled-components",
         "typescript",
