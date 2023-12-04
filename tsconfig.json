@@ -68,6 +68,6 @@
         "useUnknownInCatchVariables": true,
         "verbatimModuleSyntax": false
     },
-    "exclude": ["node_modules", "src/gatsby-types.d.ts"],
+    "exclude": ["node_modules"],
     "include": ["gatsby-config.ts", "gatsby-node.ts", "gatsby-ssr.ts", "src"]
 }
