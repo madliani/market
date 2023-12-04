@@ -35,9 +35,9 @@ const config: GatsbyConfig = {
         }
     ],
     siteMetadata: {
-        author: "@crystallographer",
+        author: "@madliani",
         description: "Web market.",
-        siteUrl: "https://crystallographer.github.io/market",
+        siteUrl: "https://madliani.github.io/market",
         title: "Market"
     }
 };

@@ -1,12 +1,12 @@
 {
     "author": {
         "email": "madliani@hotmail.com",
-        "name": "crystallographer",
-        "url": "https://crystallographer.github.io"
+        "name": "madliani",
+        "url": "https://madliani.github.io"
     },
     "bugs": {
         "email": "madliani@hotmail.com",
-        "url": "https://github.com/crystallographer/market/issues"
+        "url": "https://github.com/madliani/market/issues"
     },
     "cpu": [
         "x64"
@@ -72,7 +72,7 @@
         "node": ">=18.16.0"
     },
     "engineStrict": true,
-    "homepage": "https://github.com/crystallographer/market",
+    "homepage": "https://github.com/madliani/market",
     "keywords": [
         "bootstrap",
         "gatsby",
@@ -92,7 +92,7 @@
     "private": true,
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/crystallographer/market.git"
+        "url": "git+https://github.com/madliani/market.git"
     },
     "scripts": {
         "build": "gatsby build",
